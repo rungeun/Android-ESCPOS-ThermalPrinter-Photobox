@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:name=".PrintSelectionActivity"
+            android:exported="true"/>
+        <activity android:name=".ReprintSelectionActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>
