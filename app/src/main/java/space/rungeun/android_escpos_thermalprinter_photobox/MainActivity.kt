@@ -6,9 +6,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import space.rungeun.android_escpos_thermalprinter_photobox.activity.PrintSelectionActivity
+import space.rungeun.android_escpos_thermalprinter_photobox.activity.ReprintSelectionActivity
 import space.rungeun.android_escpos_thermalprinter_photobox.databinding.ActivityMainBinding
-import space.rungeun.android_escpos_thermalprinter_photobox.databinding.ActivityPrintSelectionBinding
-import space.rungeun.android_escpos_thermalprinter_photobox.databinding.ActivityReprintSelectionBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
