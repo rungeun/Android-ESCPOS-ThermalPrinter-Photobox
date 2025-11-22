@@ -30,6 +30,9 @@
         <activity
             android:name=".activity.FrameSelectionActivity"
             android:exported="true" />
+        <activity
+            android:name=".FrameDesignSelectionActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

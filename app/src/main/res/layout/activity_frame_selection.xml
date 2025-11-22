@@ -6,11 +6,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.frameSelectionActivity">
+    tools:context=".activity.FrameSelectionActivity">
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="프레인 개수 선택 화면" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:autoSizeMaxTextSize="200dp"
+        android:autoSizeMinTextSize="10dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="프레임 개수 선택" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/frameCountPreviewPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="2"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/frameCountUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Button" />
+
+            <TextView
+                android:id="@+id/frameCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="1"
+                android:textSize="100dp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_margin="10dp"
+                android:background="#3F3D3D"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_margin="10dp"
+                android:background="#3F3D3D"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp">
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/frameCountDownButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Button" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toFrameDesignSelectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="다음"
+            android:textSize="50dp" />
+    </LinearLayout>
 </LinearLayout>
