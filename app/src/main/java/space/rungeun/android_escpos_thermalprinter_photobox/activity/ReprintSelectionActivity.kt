@@ -1,10 +1,11 @@
-package space.rungeun.android_escpos_thermalprinter_photobox
+package space.rungeun.android_escpos_thermalprinter_photobox.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import space.rungeun.android_escpos_thermalprinter_photobox.R
 import space.rungeun.android_escpos_thermalprinter_photobox.databinding.ActivityReprintSelectionBinding
 
 class ReprintSelectionActivity : AppCompatActivity() {
