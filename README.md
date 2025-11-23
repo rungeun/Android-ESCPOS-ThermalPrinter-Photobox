@@ -100,11 +100,10 @@ H/W 내용은 [HW-README](HW-model-blueprint/HW-README.md)에 작성되어 있�
     - [x] `다음` 버튼을 통해 이용약관 화면으로 이동
 - [x] **카메라에서 촬영중인 영상을 화면에 표시 : (feature/ATP-4-camera-preview)**
     - [x] 프레임 디자인 선택 화면에 프리뷰 영상 표시
-- [ ] **개인정보 이용동의 : (feature/ATP-5-privacy-policy-consent)**
-    - [ ] 이용 약관 전문 표시
-    - [ ] 이용 약관 한줄요약 표시
-    - [ ] `이용 약관 동의`체크박스를 누를 경우, `다음` 버튼 활성화
-    - [ ] `다음` 버튼을 통해 촬영 화면으로 이동
+- [x] **개인정보 이용동의 : (feature/ATP-5-privacy-policy-consent)**
+    - [x] 이용 약관 전문 표시
+    - [x] `이용 약관 동의`체크박스를 누를 경우, `다음` 버튼 활성화
+    - [x] `다음` 버튼을 통해 촬영 화면으로 이동
 - [ ] **사진 촬영 : (feature/ATP-6-multi-photo-shoot)**
     - [ ] 사진 촬영화면
     - [ ] 프레임에 맞게 사진 N번 촬영
