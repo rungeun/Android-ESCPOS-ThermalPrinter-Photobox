@@ -6,13 +6,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import space.rungeun.android_escpos_thermalprinter_photobox.FrameDesignSelectionActivity
 import space.rungeun.android_escpos_thermalprinter_photobox.R
 import space.rungeun.android_escpos_thermalprinter_photobox.constants.count
 import space.rungeun.android_escpos_thermalprinter_photobox.controller.FrameSelectionController
-import space.rungeun.android_escpos_thermalprinter_photobox.controller.PrintSelectionController
 import space.rungeun.android_escpos_thermalprinter_photobox.databinding.ActivityFrameSelectionBinding
-import space.rungeun.android_escpos_thermalprinter_photobox.databinding.ActivityPrintSelectionBinding
 
 class FrameSelectionActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFrameSelectionBinding

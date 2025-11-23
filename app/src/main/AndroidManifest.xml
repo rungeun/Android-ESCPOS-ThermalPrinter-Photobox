@@ -23,15 +23,18 @@
         </activity>
         <activity
             android:name=".activity.PrintSelectionActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activity.ReprintSelectionActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activity.FrameSelectionActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
-            android:name=".FrameDesignSelectionActivity"
+            android:name=".activity.FrameDesignSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PrivacyPolicyConsentActivity"
             android:exported="false" />
     </application>
 
