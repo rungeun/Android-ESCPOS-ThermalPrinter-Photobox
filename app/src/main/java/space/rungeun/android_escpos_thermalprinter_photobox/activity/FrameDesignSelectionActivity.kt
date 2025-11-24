@@ -53,10 +53,11 @@ class FrameDesignSelectionActivity : CameraPreViewActivity() {
         }
 
         binding.frameRecyclerView.layoutManager = GridLayoutManager(this, 3)
-        binding.frameRecyclerView.adapter = FrameRecyclerViewAdapter()
+        binding.frameRecyclerView.adapter = FrameRecyclerViewAdapter(100) //TODO: 접근 가능한 프레임 수로 변경
         binding.toPrivacyPolicyConsentButton.setOnClickListener {
             val intent = Intent(this, PrivacyPolicyConsentActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         binding.previousImageButton.setOnClickListener {
@@ -68,6 +69,11 @@ class FrameDesignSelectionActivity : CameraPreViewActivity() {
         binding.button4.setOnClickListener {
             // TODO: 프레임 그리기
         }
+    }
+
+    override fun onPause() {
+        Log.d(TAG, "onPause - releasing camera")
+        super.onPause()
     }
 
     override fun onCameraState(
