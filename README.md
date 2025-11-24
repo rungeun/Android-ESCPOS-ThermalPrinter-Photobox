@@ -65,7 +65,8 @@ H/W 내용은 [HW-README](HW-model-blueprint/HW-README.md)에 작성되어 있�
 
 ## 🌿 시연
 
-~~영상 추가 예정~~
+![gif1](/image/20251124_223504(1).gif)
+![gif2](/image/20251124_223333(1).gif)
 
 ---
 
