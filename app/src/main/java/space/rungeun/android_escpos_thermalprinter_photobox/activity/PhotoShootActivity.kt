@@ -23,6 +23,7 @@ import com.jiangdg.ausbc.callback.ICaptureCallBack
 import kotlinx.coroutines.*
 import space.rungeun.android_escpos_thermalprinter_photobox.controller.PhotoManager
 import space.rungeun.android_escpos_thermalprinter_photobox.model.Photo
+import space.rungeun.android_escpos_thermalprinter_photobox.model.PrintSettings
 import java.io.File
 
 class PhotoShootActivity : CameraPreViewActivity() {
@@ -37,7 +38,7 @@ class PhotoShootActivity : CameraPreViewActivity() {
 
     // Photo tracking variables
     private var currentPhotoIndex = 0
-    private var maxPhotos = 15
+    private var maxPhotos = PrintSettings.frameCount
     private val capturedPhotos = mutableListOf<Bitmap>()
     private val coroutineScope = CoroutineScope(Dispatchers.Main + Job())
 

@@ -14,6 +14,8 @@ import com.dantsu.escposprinter.textparser.PrinterTextParserImg
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import space.rungeun.android_escpos_thermalprinter_photobox.model.Photo
+import space.rungeun.android_escpos_thermalprinter_photobox.model.PrintSettings
+import space.rungeun.android_escpos_thermalprinter_photobox.model.PrintSettings.printCount
 
 object PrinterManager {
 
@@ -33,10 +35,12 @@ object PrinterManager {
             val printer = connectPrinter(context, onProgress) ?:
             return@withContext Result.failure(Exception("프린터를 찾을 수 없습니다"))
 
-            val printContent = generatePrintContent(printer, photos, onProgress)
+            repeat(printCount) { copyNumber ->
+                onProgress("${copyNumber + 1}/$printCount 부 인쇄 중...")
 
-            onProgress("인쇄 중...")
-            printer.printFormattedTextAndCut(printContent)
+                val printContent = generatePrintContent(printer, photos, onProgress)
+                printer.printFormattedTextAndCut(printContent)
+            }
 
             onProgress("인쇄 완료!")
             Result.success(Unit)
@@ -45,6 +49,7 @@ object PrinterManager {
             Result.failure(e)
         }
     }
+
 
     private fun connectPrinter(
         context: Context,

@@ -10,6 +10,7 @@ import space.rungeun.android_escpos_thermalprinter_photobox.R
 import space.rungeun.android_escpos_thermalprinter_photobox.constants.count
 import space.rungeun.android_escpos_thermalprinter_photobox.controller.PrintSelectionController
 import space.rungeun.android_escpos_thermalprinter_photobox.databinding.ActivityPrintSelectionBinding
+import space.rungeun.android_escpos_thermalprinter_photobox.model.PrintSettings
 
 class PrintSelectionActivity() : AppCompatActivity() {
     private lateinit var binding: ActivityPrintSelectionBinding
@@ -26,23 +27,23 @@ class PrintSelectionActivity() : AppCompatActivity() {
             insets
         }
 
-
-
         binding.countUpButton.setOnClickListener {
             printSelectionController.run(count.change.value)
-            binding.countText.setText(printSelectionController.currentCount.toString())
+            updateDisplay()
         }
         binding.countDownButton.setOnClickListener {
             printSelectionController.run(-count.change.value)
-            binding.countText.setText(printSelectionController.currentCount.toString())
+            updateDisplay()
         }
         binding.toFrameSelectionButton.setOnClickListener {
+            PrintSettings.setPrintCount(printSelectionController.currentCount)
+
             val intent = Intent(this, FrameSelectionActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 
-
+    private fun updateDisplay() {
+        binding.countText.text = printSelectionController.currentCount.toString()
+    }
 }
