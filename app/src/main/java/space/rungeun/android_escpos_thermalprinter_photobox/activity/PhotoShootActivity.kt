@@ -37,7 +37,7 @@ class PhotoShootActivity : CameraPreViewActivity() {
 
     // Photo tracking variables
     private var currentPhotoIndex = 0
-    private var maxPhotos = 6
+    private var maxPhotos = 15
     private val capturedPhotos = mutableListOf<Bitmap>()
     private val coroutineScope = CoroutineScope(Dispatchers.Main + Job())
 

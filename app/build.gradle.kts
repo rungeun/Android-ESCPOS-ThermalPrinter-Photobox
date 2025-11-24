@@ -59,4 +59,6 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+
+    implementation("com.github.DantSu:ESCPOS-ThermalPrinter-Android:3.3.0")
 }
